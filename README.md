@@ -1,4 +1,5 @@
-UDACITY FEED READER PROJECT ===========================
+feed reader project
+=====================
 
 # Feed Reader Project
 
