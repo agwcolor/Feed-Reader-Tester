@@ -20,9 +20,6 @@ To install the game on your desktop:
 4. Open the frontend-nanodegree-feed-reader-project folder.
 5. Open the index.html file in your browser.
 
-- OR - 
-
-Use the feed reader in your browser here : http://htmlpreview.github.io/?https://github.com/agwcolor/Feed-Reader-Tester/blob/master/index.html.
 
 ## Instructions
 
@@ -35,7 +32,7 @@ This is an RSS feed reader application.
 3. That's it - Happy Reading!   
 
 ## Background
-This project is mainly a learning resource for writing Jasmine tests. It uses the Google Feed Reader API to grab RSS feeds as a JSON object as well as the Handlebars templating library and jQuery. See the project overview here if you are interested in the testing goals: [a relative link](ProjectOverview.md) 
+This project is mainly a learning resource for writing Jasmine tests. It uses the Google Feed Reader API to grab RSS feeds as a JSON object as well as the Handlebars templating library and jQuery. See the project overview here if you are interested in the testing goals: [Project Overview](ProjectOverview.md) 
 
 ## Dependencies
 This app requires access to the following libraries and fonts from within the index.html file.
