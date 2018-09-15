@@ -1,4 +1,4 @@
-feed reader project
+frontend-nanodegree-feed-reader-project
 =====================
 
 # Feed Reader Project
@@ -7,7 +7,6 @@ feed reader project
 * [Installation](#installation)
 * [Instructions](#instructions)
 * [Background](#background)
-
 * [Dependencies](#dependencies)
 * [Contributing](#contributing)
 * [License](#license)
@@ -31,23 +30,24 @@ This is an RSS feed reader application.
 
 1. To reveal the side-bar menu, click the hamburger menu at the upper left-hand side of the app screen.
 
-2. To reveal a new feed, select from one of the four options on the menu. 
+2. To reveal a new feed, select from one of the four options on the menu.  The sidebar menu will automatically collapse.
 
-3. That's it! This feed reader is pretty straight-forward to use.  
+3. That's it - Happy Reading!   
 
-## Background - This project is mainly a learning resource for writing Jasmine tests. It uses the Google Feed Reader API to grab RSS feeds as a JSON object as well as the Handlebars templating library and jQuery. See the project overview here if you are interested in the testing goals: [a relative link](ProjectOverview.md) 
+## Background
+This project is mainly a learning resource for writing Jasmine tests. It uses the Google Feed Reader API to grab RSS feeds as a JSON object as well as the Handlebars templating library and jQuery. See the project overview here if you are interested in the testing goals: [a relative link](ProjectOverview.md) 
 
 ## Dependencies
 This app requires access to the following libraries and fonts from within the index.html file.
-       ```
-       http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
+
+       ```http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
 
        http://cdn.jsdelivr.net/handlebarsjs/2.0.0/handlebars.min.js
 
        http://google.com/jsapi
 
 	   https://fonts.googleapis.com/css?family=Roboto:400,100,300,700
-       ```
+	   ```
 
 
 ## Contributing
