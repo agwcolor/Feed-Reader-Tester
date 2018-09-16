@@ -5,7 +5,7 @@
  */
 
 /* Tests are contained w/in the $() function :
- * $(function() {}) is jQuery shorthand for a function that is only
+ * $(function(){...}()); is jQuery shorthand for a function that is only
  * called once all of the page DOM elements are ready to be manipulated.
  */
 
@@ -46,8 +46,8 @@ $(function() {
 
         it('name defined', function() {
             for (let feed of allFeeds) {
-                expect(feed.name).toBeDefined();
-                expect(feed.name.length).not.toBe(0);
+                expect(feed.name).toBeDefined(); // name defined
+                expect(feed.name.length).not.toBe(0); //name not empty
             }
         });
     });
@@ -100,7 +100,7 @@ $(function() {
 
         /* 'at least 1 element in .feed' test:
          *        1. calls loadFeed function (uses beforeEach & done() to
-                      ensure it completes before running test.
+         *           ensure it completes before running test.
          * Checks 2. make sure that there is at least one article (.entry) in the feed
          *
          */
@@ -124,10 +124,11 @@ $(function() {
         /*'feed and feed content changed when new feed loaded' test :
          *        1. calls loadFeed function 2x to simulate loading more than 1 feed.
          *           It uses beforeEach & done() to make sure it completes before running the test on the feed content.
-                     We store the header-title and first article (.entry) for each loadFeed function call so we can compare them later.
+         *           We store the header-title and first article (.entry) for each loadFeed function call so we can compare them later.
          * Checks 2. that the feed headings and feed content change
          */
-        let firstFeed = '';
+
+        let firstFeed = ''; //declaring global variables for use in beforeEach & it(test) functions
         let firstFeedArticle = '';
         let secondFeed = '';
         let secondFeedArticle = '';
