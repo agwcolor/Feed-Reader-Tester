@@ -80,13 +80,9 @@ $(function() {
             let menuLink = document.querySelector('.menu-icon-link');
 
             menuLink.click(); //open sidebar
-            //console.log(body.classList.contains('menu-hidden'));
-            //debugger;  used to see the clicks in action
             expect(body.classList.contains('menu-hidden')).toBe(false); //sidebar menu should be showing
 
             menuLink.click(); //close sidebar menu on second click
-            //console.log(body.classList.contains('menu-hidden'));
-            //debugger;  used to see the clicks in action
             expect(body.classList.contains('menu-hidden')).toBe(true); //side bar menu should be hidden
 
         });
@@ -108,11 +104,12 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('at least 1 element in .feed', function() {
+        it('at least 1 element w/ class .entry in .feed', function() {
 
-            const feed = document.querySelectorAll('.entry');
-            //console.log(feed + " is the value of feed");
-            //console.log(feed.length);
+            let feed = document.querySelectorAll('.feed .entry');
+            /* for (var i = feed.length - 1; i >= 0; i--) {
+                console.log(feed[i]);
+            }; //for debugging only to see value of feed */
             expect(feed.length).toBeGreaterThan(0); //make sure length of Nodelist object is greater than 0
         });
     });
@@ -137,13 +134,9 @@ $(function() {
             loadFeed(0, function() { //load first feed
                 firstFeed = document.querySelector('.header-title').innerHTML; //get first feed title
                 firstFeedArticle = document.querySelector('.entry').innerHTML; //get first article (.entry) of first feed title
-                //debugger
-                console.log(firstFeed + " +1st " + firstFeedArticle);
                 loadFeed(1, function() { //load second feed
                     secondFeed = document.querySelector('.header-title').innerHTML; //get second feed title
                     secondFeedArticle = document.querySelector('.entry').innerHTML; //get first article (.entry) of second feed title
-                    //debugger
-                    console.log(secondFeed + " +2nd " + secondFeedArticle);
                     done();
                 });
             });
@@ -152,9 +145,7 @@ $(function() {
 
         it('feed & feed content changed when new feed loaded', function() {
             expect(firstFeed).not.toBe(secondFeed); //makes sure feeds have changed by comparing their headings
-            console.log(firstFeed === secondFeed); //should be false
             expect(firstFeedArticle).not.toBe(secondFeedArticle); //makes sure first articles of feeds have changed
-            console.log(firstFeedArticle === secondFeedArticle); //should be false
         });
     });
 
