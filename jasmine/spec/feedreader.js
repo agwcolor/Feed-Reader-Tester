@@ -118,7 +118,7 @@ $(function() {
     });
 
 
-    /* "New Feed Selection" Test Suite*/
+    /* "New Feed Selection" Test Suite - When a new feed is loaded, make sure that headings and contents have changed */
     describe('New Feed Selection', function() {
 
         /*'feed and feed content changed when new feed loaded' test :
@@ -128,7 +128,7 @@ $(function() {
          * Checks 2. that the feed headings and feed content change
          */
 
-        let firstFeed = ''; //declaring global variables for use in beforeEach & it(test) functions
+        let firstFeed = ''; //declaring global variables for use in beforeEach & it() functions
         let firstFeedArticle = '';
         let secondFeed = '';
         let secondFeedArticle = '';
